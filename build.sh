@@ -50,6 +50,7 @@ make install
 cd ~/tmp/libs/poppler*
 PKG_CONFIG_PATH=~/tmp/usr/lib/pkgconfig/:$FONTCONFIG_PKG:$PKG_CONFIG_PATH \
 ./configure --prefix=/var/task      \
+            --disable-shared        \
             --sysconfdir=/var/task/etc           \
             --enable-build-type=release \
             --enable-cmyk               \
