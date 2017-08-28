@@ -8,7 +8,7 @@ wget -P ~/tmp/downloads \
          http://downloads.sourceforge.net/freetype/freetype-2.6.1.tar.bz2 \
          http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2 \
          http://xmlsoft.org/sources/libxml2-2.9.2.tar.gz \
-         http://poppler.freedesktop.org/poppler-0.37.0.tar.xz \
+         https://poppler.freedesktop.org/poppler-0.57.0.tar.xz \
 && ls ~/tmp/downloads/*.tar.* | xargs -i tar xf {} -C ~/tmp/libs/
 
 pushd .
@@ -65,4 +65,4 @@ tar -C ~/tmp/install/var/task \
     --exclude='share'   \
     -zcvf ~/tmp/tar/poppler.tar.gz .
 
-aws s3 cp ~/tmp/tar/poppler.tar.gz s3://"${S3BUCKET}"/poppler.tar.gz
+#aws s3 cp ~/tmp/tar/poppler.tar.gz s3://"${S3BUCKET}"/poppler.tar.gz
