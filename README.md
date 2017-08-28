@@ -16,7 +16,7 @@ To run the script you need to specify your S3 destination bucket as an environme
 # Usage
 
 ```
-wget https://github.com/teebu/poppler-for-lambda/blob/master/build.sh
+wget https://raw.githubusercontent.com/teebu/poppler-for-lambda/master/build.sh
 # Review the build.sh script
 chmod +x build.sh
 S3BUCKET="my-s3-bucket" ./build.sh
