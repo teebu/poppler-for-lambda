@@ -68,4 +68,4 @@ tar -C ~/tmp/install/var/task \
     --exclude='share'   \
     -zcvf ~/tmp/tar/poppler.tar.gz .
 
-#aws s3 cp ~/tmp/tar/poppler.tar.gz s3://"${S3BUCKET}"/poppler.tar.gz
+aws s3 cp ~/tmp/tar/poppler.tar.gz s3://"${S3BUCKET}"/poppler.tar.gz
