@@ -21,3 +21,5 @@ wget https://raw.githubusercontent.com/teebu/poppler-for-lambda/master/build.sh
 chmod +x build.sh
 S3BUCKET="my-s3-bucket" ./build.sh
 ```
+
+Note: I also had to add `libopenjpeg.so.2` inside my lambda's `/lib/` folder.
