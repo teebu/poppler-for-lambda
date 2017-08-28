@@ -2,6 +2,8 @@
 
 sudo yum -y groupinstall "Development Tools"
 
+sudo yum install libjpeg-turbo-devel.x86_64
+
 mkdir -p ~/tmp/{usr,etc,var,libs,install,downloads,tar}
 
 wget -P ~/tmp/downloads \
